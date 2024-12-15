@@ -198,11 +198,15 @@ platform_do_upgrade() {
 	*abt,asr3000* |\
 	*cetron,ct3003* |\
 	*clt,r30b1* |\
+ 	*e-life,etr631-t* |\
+	*e-life,etr635-u* |\
 	*imou,lc-hx3001* |\
 	*jcg,q30* |\
 	nradio,wt9103 |\
 	cmcc,a10 |\
 	cmcc,rax3000m |\
+        cmcc,rax3000me |\
+	cmcc,xr30 |\
 	h3c,nx30pro |\
 	*konka,komi-a31* |\
         *kst,wf3000a* |\
@@ -212,6 +216,8 @@ platform_do_upgrade() {
 	*snand*)
 		nand_do_upgrade "$1"
 		;;
+        cmcc,xr30-emmc |\
+	*sl,3000* |\
         *sl,3000-emmc* |\
 	cmcc,rax3000m-emmc |\
 	*emmc*)
@@ -250,10 +256,14 @@ platform_check_image() {
 	*abt,asr3000* |\
 	*cetron,ct3003* |\
 	*clt,r30b1* |\
+ 	*e-life,etr631-t* |\
+	*e-life,etr635-u* |\
 	*imou,lc-hx3001* |\
 	*jcg,q30* |\
 	cmcc,a10 |\
 	cmcc,rax3000m* |\
+        cmcc,rax3000me |\
+	cmcc,xr30 |\
 	h3c,nx30pro |\
 	*konka,komi-a31* |\
         *kst,wf3000a* |\
@@ -261,6 +271,7 @@ platform_check_image() {
 	*nokia,ea0326gmp* |\
         *newland,nl-wr8103* |\
 	*newland,nl-wr9103* |\
+        *sl,3000* |\
         *sl,3000-emmc* |\
 	*snand* |\
 	*emmc*)
